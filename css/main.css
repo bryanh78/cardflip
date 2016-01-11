@@ -1,0 +1,40 @@
+/*
+	Put your custom CSS here.
+
+	You may find these CSS3 properties useful:;
+		transition
+		-webkit-transform
+		-webkit-transform-style
+		-webkit-backface-visibility
+*/
+/*.front, .back, .portfolio-item{
+	backface-visibility: hidden;
+	transition-duration: 1s;
+}
+.front {
+	position: absolute;
+}
+.back, .portfolio-item:hover .front{
+	transform: rotateX(180deg);
+
+}
+.portfolio-item:hover .back{
+	transform: rotateX(0deg);
+}*/
+.front {
+	backface-visibility: hidden;
+	transition-duration: 1s;
+	position: absolute;
+}
+/*.back {
+	backface-visibility: hidden;
+	transition-duration: 1s;
+}*/
+.portfolio-item:hover .front{
+	transform:rotateY(90deg) rotateX(90deg);
+	transition-duration: 1s;
+}
+/*.portfolio-item:hover .back{
+	transform:rotateY(0deg) rotateX(0deg);
+	transition-duration: 1s;
+}*/
