@@ -25,17 +25,19 @@
 	backface-visibility: hidden;
 	transition-duration: 1s;
 	position: absolute;
+	z-index: 1
 }
-/*.back {
+.back {
 	backface-visibility: hidden;
 	transition-duration: 1s;
-}*/
+	transform: rotateZ(-90deg) rotateX(-180deg);
+}
 .portfolio-item:hover .front{
-	transform:rotateY(90deg) rotateX(90deg);
+	transform:  rotateZ(-90deg) rotateX(180deg);
 	transition-duration: 1s;
 }
-/*.portfolio-item:hover .back{
-	transform:rotateY(0deg) rotateX(0deg);
+.portfolio-item:hover .back{
+	transform:rotateY(0deg) rotateZ(0deg) ;
 	transition-duration: 1s;
-}*/
+}
 /*file:///Users/student/projects/html1-card-flip/index.html*/
